@@ -1,5 +1,6 @@
 # JobSearch Web Application Documentation
 
+
 ![logo](https://www.dice.com/binaries/medium/content/gallery/dice/insights/2015/06/Screen-Shot-2015-06-22-at-10.41.14-AM.png)
 
 🗂️ **JobSearch** is a web platform for employment and management aimed at facilitating interaction between candidates
