@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Jobsearcg</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 570px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+        }
+        .heading {
+        font-size: 35px;
+        color: white;
+                    display: block;
+                                font-weight: bold
+        }
+        .subheading {
+                    display: block;
+                    color: #474747;
+                                font-weight: bold
+        }
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .content p {
+            margin-bottom: 40px
+        }
+        .box {
+            padding: 30px 50px 10px;
+            background-color: #f7f7f7;
+        }
+        .regards {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: justify;
+            color: #707070;
+            font-size: 14px;
+            background-color: #000000;
+            padding: 30px 55px;
+        }
+        .rights {
+        text-align: center;
+        }
+        button {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 17px;
+            display: block;
+            margin: auto;
+        }
+        .sender {
+            font-weight: bold;
+        }
+        .logo {
+            text-align: center;
+        }
+        a {
+            text-decoration: none
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <span class="heading">JobSearch</span>
+        <span class="subheading">Find the perfect job</span>
+    </div>
+    <div class="box">
+        <h1>Hello, <span th:text="${name}">User</span> 😀!</h1>
+        <div class="content">
+            <p>
+                We hope this message finds you well. This is a friendly reminder to inform you that you have received a new chat message on JobSearch from <span class="sender" th:text="${sender}">carljensen@gmail.com</span>
+            </p>
+        </div>
+        <a href="http://localhost:3000/messaging">
+            <button>
+                Click here to reply
+            </button>
+        </a>
+        <div th:text="${content}"></div>
+        <div class="regards">
+            Best regards,<br>
+            Rodrigo Molina
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo">
+            <span class="heading">JobSearch</span>
+            <span class="subheading">Find the perfect job</span>
+        </div>
+        <p>
+            Do not reply to this message. This address does not accept emails, so you will not receive a response. As part of our service, we send this email with essential information about your JobSearch account, your recent purchase, booking, or subscription to one of our services. At JobSearch, we respect and protect your privacy in accordance with our Privacy Policy. If you have questions, please visit the Help Center.
+        </p>
+        <p class="rights">
+            © Copyright 2024 JobSearch. All rights reserved.
+        </p>
+    </div>
+</div>
+</body>
+</html>
